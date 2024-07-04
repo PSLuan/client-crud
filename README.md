@@ -7,9 +7,13 @@ Para gerar o jwt que será utilizado na autenticação dos serviços, é necess�
 Exemplo de build e start do projeto:
 
 1 - npm run build
+
 2 - npm run start
+
 3 - cd src/ && node generate-jwt.js (ctrl + c no jwt apresentado no terminal)
+
 4 - requisição: 
+
 curl -X POST http://localhost:3000/clients \
 -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidXNlcm5hbWUiOiJ0ZXN0dXNlciIsImlhdCI6MTcyMDA0MDk2MywiZXhwIjoxNzIwMDQ0NTYzfQ.oSdP2LFbM0GEIZ4_2XoGGjvf_KnzrjqRNP3huChwhj4" \
 -H "Content-Type: application/json" \
